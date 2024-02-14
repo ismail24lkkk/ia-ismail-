@@ -1,93 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Product Name</title>
-    <style>
-        /* Set background and text colors to black and white */
-        body {
-            background-color: black;
-            color: white;
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Split content into sections with flexbox */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 1em;
-        }
-
-        /* Image section */
-        .image {
-            width: 40%;
-            padding: 1em;
-            border: 1px solid white;
-        }
-
-        /* Content section */
-        .content {
-            width: 55%;
-            padding: 1em;
-        }
-
-        /* Style the header */
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-        }
-
-        /* Style the price */
-        .price {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        /* Style the features list */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-
-        /* Style the call to action button */
-        button {
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 1em 2em;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire d'inscription</title>
 </head>
 <body>
-    <div class="container">
-</a>
-
-        </div>
-        <div class="content">
-            <h1>my name is ismail</h1>
-            <p class="price">my frist code html </p>
-            <p>
-                ليوم عندنا امتحان في مادة اللغة الفرنسية 
-            </p>
-            <h2>حصة مع 2.00</h2>
-            <ul>
-                <li>احضار ستيلو ازرق 
-                </li>
-                <li>عدم تأخر على حصة </li>
-                <li>و شكرا</li>
-            </ul>
-            <button>بتوفيق</button>
-        </div>
-    </div>
-
+<h1>Formulaire d'inscription</h1>
+<form>
+  <h2>Étape 1: Votre identité</h2>
+  <div>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+  </div>
+  <div>
+    <label for="prenom">Prénom et nom :</label>
+    <input type="text" id="prenom" name="prenom" required>
+  </div>
+  <div>
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" required>
+  </div>
+  <h2>Étape 2: Adresse de livraison</h2>
+  <div>
+    <label for="adresse">Adresse :</label>
+    <input type="text" id="adresse" name="adresse" required>
+  </div>
+  <div>
+    <label for="code_postal">Code postal :</label>
+    <input type="text" id="code_postal" name="code_postal" required>
+  </div>
+  <div>
+    <label for="pays">Pays :</label>
+    <input type="text" id="pays" name="pays" required>
+  </div>
+  <h2>Étape 3: Informations CB</h2>
+  <div>
+    <label for="type_carte">Type de carte bancaire :</label>
+    <select id="type_carte" name="type_carte" required>
+      <option value="visa">VISA</option>
+      <option value="mastercard">Mastercard</option>
+      <option value="amex">American Express</option>
+    </select>
+  </div>
+  <div>
+    <label for="numero_carte">N° de carte :</label>
+    <input type="text" id="numero_carte" name="numero_carte" required>
+  </div>
+  <div>
+    <label for="code_securite">Code sécurité :</label>
+    <input type="text" id="code_securite" name="code_securite" required>
+  </div>
+  <div>
+    <label for="nom_porteur">Nom du porteur :</label>
+    <input type="text" id="nom_porteur" name="nom_porteur" required>
+  </div>
+  <div>
+    <input type="checkbox" id="meme_nom" name="meme_nom" checked>
+    <label for="meme_nom">Même nom que sur la carte</label>
+  </div>
+  <button type="submit">J'ACHÈTE !</button>
+</form>
 </body>
 </html>
