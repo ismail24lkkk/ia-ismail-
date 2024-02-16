@@ -1,69 +1,72 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulaire d'inscription</title>
-</head>
-<body>
-<h1>Formulaire d'inscription</h1>
-<form>
-  <h2>Étape 1: Votre identité</h2>
-  <div>
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
-  </div>
-  <div>
-    <label for="prenom">Prénom et nom :</label>
-    <input type="text" id="prenom" name="prenom" required>
-  </div>
-  <div>
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" name="telephone" required>
-  </div>
-  <h2>Étape 2: Adresse de livraison</h2>
-  <div>
-    <label for="adresse">Adresse :</label>
-    <input type="text" id="adresse" name="adresse" required>
-  </div>
-  <div>
-    <label for="code_postal">Code postal :</label>
-    <input type="text" id="code_postal" name="code_postal" required>
-  </div>
-  <div>
-    <label for="pays">Pays :</label>
-    <input type="text" id="pays" name="pays" required>
-  </div>
-  <h2>Étape 3: Informations CB</h2>
-  <div>
-    <label for="type_carte">Type de carte bancaire :</label>
-    <select id="type_carte" name="type_carte" required>
-      <option value="visa">VISA</option>
-      <option value="mastercard">Mastercard</option>
-      <option value="amex">American Express</option>
-    </select>
-  </div>
-  <div>
-    <label for="numero_carte">N° de carte :</label>
-    <input type="text" id="numero_carte" name="numero_carte" required>
-  </div>
-  <div>
-    <label for="code_securite">Code sécurité :</label>
-    <input type="text" id="code_securite" name="code_securite" required>
-  </div>
-  <div>
-    <label for="nom_porteur">Nom du porteur :</label>
-    <input type="text" id="nom_porteur" name="nom_porteur" required>
-  </div>
-  <div>
-    <input type="checkbox" id="meme_nom" name="meme_nom" checked>
-    <label for="meme_nom">Même nom que sur la carte</label>
-  </div>
-  <button type="submit">J'ACHÈTE !</button>
-</form>
-</body>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body bgcolor="WHITE">
+        <center>
+        <form>
+            <pre>
+            <p><center><b><font color="black" size="4"><h3>STEP:1 VOTRE IDENTITE</h3></font></b></center></p>
+            <table>
+            <table border="3" bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Nom            </b> <input type="text" placeholder="Prénom et nom"></td>
+                </tr>
+            </table>
+            <table border="3" bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Email           </b><input type="email" placeholder="exemple@domain.COM"></td>
+                </tr>
+            </table>
+            <table border="3" bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Telephone       </b><input type="email" placeholder="par: +212 746357463"></td>
+                </tr>
+            </table>
+        </table>
+            <p><center><b><font color="BLACK" size="4"><H3>STEP:2 ADRESSE DE LIVRISON</H3></font></b></center></p>
+            <table border="3" bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Adresse           </b><textarea  rows="4"></textarea></td>                     
+                </tr>
+            </table>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Code postal       </b><input type="text"></td>
+                </tr>
+            </table>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Pays              </b><input type="text"></td>
+                </tr>
+            </table>
+            <p><center><b><font color="BLACK" size="4"><H3>STEP:3INFORMTIONS CB</H3> </font></b></center></p>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Type de carte bancaire</b>
+
+<input type="radio" name="carte"> <img src="https://tse2.mm.bing.net/th?id=OIP.LMwzmOS4wFNhM1w_8S4THgHaEK&pid=Api&P=0&h=180" height="20" width="20" > Visa  <input type="radio" name="carte"> <img src="https://tse4.mm.bing.net/th?id=OIP.EAPrpAdkGAfEcT7mZseWVwHaEC&pid=Api&P=0&h=180" height="20" width="20" > AmEx  <input type="radio" name="carte"> <img src="https://tse2.mm.bing.net/th?id=OIP.wf4aaFEOVBgsxGStD30VYwHaEK&pid=Api&P=0&h=180" height="20" width="20" > Mastercard
+                </tr>
+            </table>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>N de carte           </b> <input type="text" ></td>
+                </tr>
+            </table>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Code sericute         </b><input type="text"></td>
+                </tr>
+            </table>
+            <table border="3"bgcolor="mediumseagreen">
+                <tr>
+                    <td><b>Nom du porteur       </b><input type="text"></td>
+                </tr>
+            </table>
+            </pre>
+            <input type="submit" value="JACHETE">
+        </form>
+        
+    </body>
+
 </html>
