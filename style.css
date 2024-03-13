@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+font-family: "Poppins", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+header{
+
+background-color: aqua;
+width: 100%;
+position: fixed;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 200px;
+
+}
+.logo{
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+}
+.novo a{
+
+color: black;
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 600;
+padding-left: 30px;
+text-transform: uppercase;
+
+
+}
+.novo a:hover{
+
+color: #0fd630;
+background-color: #9777b6a8;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+padding-right: 10px;
+
+
+
+}
+section{
+
+padding: 100px 200px;
+
+
+
+}
+.main{
+    width: 100%; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+background-image: url(images/back.jpg) ;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.main h1{
+color: white;
+font-size: 33px;
+font-weight: 600;
+}
+.main h1 span{
+color: blue;
+font-size: 50px;
+font-weight: 700;
+display: inline-block;
+
+}
+.main h3{
+color: azure;
+font-size: larger;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.main_btn{
+
+    color: azure;
+    background-color: #0004ff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 300;
+    display: inline-block;
+    border-radius: 17px;
+    margin-bottom: 40px;
+transition: 0.7s ease;
+}
+.main_btn:hover{
+
+background-color: aquamarine;
+transform: scale(1.1);
+
+}
+.smma a {
+
+    color: azure;
+    font-size: 30px;
+    padding-right: 30px;
+}
+.title {
+
+display: flex;
+justify-content:center ;
+color: #0004ff;
+font-size: larger;
+font-weight: 500;
+margin-bottom: 30px;
+}
+.content{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 11PX;
+}
+.card{
+
+    background-color: aqua;
+    width: 21.2em;
+    box-shadow: 0 5px 25PX rgb(1, 1, 15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.content{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+color: black;
+font-size: 2.2em;
+font-weight: 800;
+margin-bottom: 30px;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.icon{
+color: #0004ff;
+font-size: 8em;
+text-align: center;
+}
+.info h3{
+color: black;
+font-size: 1.2em;
+font-weight: 700;
+margin: 10px;
+
+}
+.info{
+    text-align: center;
+}
+.cards{
+
+    background-image: linear-gradient(rgb(0, 183, 255),rgb(37, 23, 23));
+}
+.project{
+
+    background-color: #ab21c7;
+}
+.project_card{
+
+    margin: 30px;
+    border: 5px solid white;
+    min-width: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project_img img{
+width: 100%;
+
+}
+.project_card:hover{
+transform: scale(1.6);
+
+}
+.project_card:hover .project_img{
+    opacity: 0.2;
+}
+.more{
+
+    background-color: beige;
+    color: black;
+}
+.project_category{
+    background-color: beige;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+span{
+    background-color: #ab21c7;
+    color: black;
+    font-style: oblique;
+    font: bold;
+}
+.project_title{
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+padding-top: 10px;
+}
+.poo{
+
+    display: flex;
+   justify-content: center;
+    font-weight: 800;
+    color: black;
+    width: 100%;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.last{
+    background-color: #0fd630;
+}
+.lastko{
+text-align: center;
+
+}
